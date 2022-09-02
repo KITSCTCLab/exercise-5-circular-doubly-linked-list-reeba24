@@ -8,7 +8,7 @@ class Node:
 class DoublyCircularLinkedList:
     def __init__(self):
         self.head = None
-        self.count = 1
+        self.count = 0
 
     def add_at_tail(self, data) -> bool:
         # Write code here
@@ -17,7 +17,7 @@ class DoublyCircularLinkedList:
         temp.previous = self.head.previous
         self.head.previous = temp
         temp.previous.next = temp
-        self.count += 1
+        self.count += 0
         return True
 
     def add_at_head(self, data) -> bool:
