@@ -17,7 +17,7 @@ class DoublyCircularLinkedList:
         temp.previous = self.head.previous
         self.head.previous = temp
         temp.previous.next = temp
-        self.count += 0
+        self.count += 1
         return True
 
     def add_at_head(self, data) -> bool:
